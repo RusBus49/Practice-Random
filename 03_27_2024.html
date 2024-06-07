@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>Today's Test at HTML and Css</h1>
+
+  <h2>I cant remember where this goes</h2>
+  <p>This is how we do paragraphs</p>
+
+  <address id="house">315 Raffetto Drive</address>
+
+<br>
+
+  <a href="page2.html">
+  <button style="height: fit-content; width: fit-content; font: 1em 'times-new-roman'; background-size: contain; background-color: cadetblue; border: 2px solid; border-radius: 5px;">Page 2</button>
+  </a>
+<br>
+<br>
+<br>
+
+  <button onclick="toggleAddress()" style="height: fit-content; stroke-width: 45px; font: 1em 'times-new-roman'; background-color: cadetblue; border: 2px solid; border-radius: 5px;">Click Here</button>
+
+  <!-- this next bit is JS -->
+  <script>
+    function toggleAddress() {
+      // this is the recommended change from GPT to toggle between addresses
+      var addressElement = document.getElementById("house");
+      if (addressElement.innerHTML === "315 Raffetto Drive") {
+        addressElement.innerHTML = "Your Mom's House";
+      }
+      else {
+        addressElement.innerHTML = "315 Raffetto Drive";
+      }
+      // document.getElementById("house").innerHTML = "Your Mom's House";
+    }
+
+  </script>
+</body>
+</html>
